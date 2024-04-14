@@ -35,8 +35,9 @@ function calcularFactorialFor(numero) {
   let factorial = 1;
 
   // verifica si el numero es negativo y si lo es manda un mensaje 
-  if (numero < 0 )
-  return "Ingrese un valor igual o mayor a 0";
+  if (numero < 0 || numero !== Number ) {
+  return "Ingrese un valor valido";
+}
   else{
     // calcula el factorial de un numero usando el ciclo for 
     for (let i = 1; i <= numero; i++) {

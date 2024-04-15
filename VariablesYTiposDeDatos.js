@@ -1,3 +1,10 @@
+// Fecha y hora de publicación: 14/04/2024 21:25
+// Versión del código: 3.0
+// Autores: Ingenieros en Computación : santiago ordoñez ordoñez y osacar julian salazar pinzon
+// Lenguaje utilizado: JavaScript
+// Versión del lenguaje: ECMAScript 6
+
+
 //declaramos el prompt como costante para que funcione el NODEJS
 const prompt = require('prompt-sync')();
 

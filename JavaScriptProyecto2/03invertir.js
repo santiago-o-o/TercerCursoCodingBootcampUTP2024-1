@@ -17,6 +17,8 @@ ing michael castro, ing juan esteban ortiz,
 //programa de ingenieria en sistemas y computacionconst prompt = require('prompt-sync')();
 
 //este programa invierte un numero 
+const prompt = require('prompt-sync');  
+
 let numero = parseFloat(prompt('Ingrese su número: '));
 
 //creamos la funcion para mostrar el numero reverso

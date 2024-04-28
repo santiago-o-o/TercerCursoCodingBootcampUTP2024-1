@@ -1,0 +1,172 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.Navbar {
+    width: 100%;
+    background-color: #3498db ;
+    margin-top: 0;
+    position: fixed; 
+    top: 0; 
+    display: flex;
+    justify-content: space-between;
+}
+.Navbar:hover{
+    background-color: #2980b9;
+}
+.contenedor{
+    margin-top: 80px;
+}
+
+.empresa{
+    flex: 1;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    margin-right: 4px;
+    width: -8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding-right: 16px;
+}
+
+.login{
+    margin-top: 18px;
+    margin-bottom: 16px;
+    margin-right: 4px;
+    width: -8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+
+    padding-right: 16px;
+    border-right: solid 1px #cccc;
+}
+.login:hover{
+    color: blue;
+}
+
+.carrito{
+    margin-top: 20px;
+
+    margin-right: 6px;
+    height: 45px;
+    padding-right: 16px;
+    border-right: solid 1px #cccc;
+    margin-left: 6px;
+    color: white;
+}
+
+.productos{
+     display: block;
+     align-items: center;
+     margin-bottom: 80px;
+     
+}
+.uno,
+.dos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.productos .producto{
+    margin-top: 30px;
+    flex-grow: 1;
+    width: 200px;
+    height: 300px;
+    border: solid 2px #e1e1e1;
+    box-shadow: 8px 8px 4px #e1e1e1;
+    background-color: white;
+    border-radius: 15px;
+}
+.productos .producto:hover{
+    box-shadow: 12px 12px 6px #afafaf;
+}
+
+.imagen img{
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-bottom: 45px;
+}
+
+
+.nombre {
+    margin-left: 5%;
+    margin-bottom: 40px;
+    font-weight: 40px;
+
+}
+
+.precio{
+    margin-left: 140px;
+}
+.imagen-dos img{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.imagen-tres img{
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-bottom: 35px;
+}
+
+.imagen-cuatro img{
+    width: 180px;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imagen-cinco img{
+    width: 180px;
+    margin-left: 10%;
+}
+.imagen-seis img{
+    width: 160px;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.imagen-siete img{
+    width: 160px;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.imagen-ocho img{
+    width: 100px;
+    margin-left: 30%;
+}
+.footer {
+    width: 100%;
+    background-color: #2c3e50;
+    margin-top: 50px;
+    top: 0; 
+
+    display: flex;
+    justify-content: flex-start;
+}
+.footer h2{
+    color: #ecf0f1;
+    font-size: 20px;
+}
+@media  screen and (max-width: 1030px){
+   .imagen-cuatro img{
+    width: 140px;
+   }
+   .precio {
+    margin-left: 120px;
+   }
+} 

@@ -32,6 +32,7 @@ body {
 .correcto {
     margin-bottom: 20%;
     display: flex;
+    flex-wrap: wrap;
     border: solid;
     border-color: orange;
     border-radius: 1%;
@@ -177,10 +178,10 @@ body {
     position: relative;
     font-family: cursive;
     height: 8%;
-    border-color: orange;
     background-color: rgb(252, 171, 20);
     border-radius: 15%;
     font-size: 100%;
+    border: none;
     font-weight: bold;
     color: white;
     box-shadow: 0 4px 0px orange;
@@ -191,11 +192,51 @@ body {
     transform: translateY(4px);
     box-shadow: 0 0 0 orange;
 }
+#volver-intentar {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    position: relative;
+    border: none;
+    font-family: cursive;
+    background-color: rgb(252, 171, 20);
+    border-radius: 10%;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 0px orange;
+}
 
-
+#volver-intentar:hover {
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0 0 0 orange;
+}
+.compartir-abajo {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(37, 98, 37);
+}
+.compartir-abajo p{
+    color: white;
+    font-size: 2vw;
+}
+.compartir-abajo a{
+    margin: 0;
+    padding: 0;
+    width: 10%;
+}
+.compartir-abajo img{
+    width: 60%;
+}
 .texto {
     margin: 0;
     padding: 0;
+}
+.texto img{
+    width: 45%;
 }
 
 .pesebre-detras {

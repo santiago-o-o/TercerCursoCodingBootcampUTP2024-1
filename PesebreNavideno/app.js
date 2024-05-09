@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let audioMula = new Audio("Audio/mula.mp3");
   let audioPastor = new Audio("Audio/pastor.mp3");
   let audioFinal = new Audio("Audio/final.mp3");
+  let contenedorFinal = document.getElementById("contenedor-Final")
   let contenedorPesebre = document.getElementById("contenedor-pesebre");
   let CartonMaria = document.querySelector(".maria-png");
   let CartonJesus = document.querySelector(".jesus-png");
@@ -74,19 +75,20 @@ document.addEventListener("DOMContentLoaded", function () {
           // Espera un momento antes de evaluar si las cartas son iguales
           setTimeout(function () {
             if (
-              primeraCarta.getAttribute("data-valor") === segundaCarta.getAttribute("data-valor")) {
-              console.log("Encontraste", valorCarta);
+              primeraCarta.getAttribute("data-valor") ===
+              segundaCarta.getAttribute("data-valor")
+            ) {
+              console.log("¡Encontraste una pareja! Valor:", valorCarta);
               primeraCarta.setAttribute("data-encontrado", "true");
               segundaCarta.setAttribute("data-encontrado", "true");
 
               audioCorrecta.play();
-
+              parejasEncontradas++;
               if (parejasEncontradas === totalCartas) {
-                console.log("ganado");
+                console.log("¡Has ganado!");
+                contenedorFinal.classList.remove("hidden")
                 audioFinal.play();
-                parejasEncontradas++;
-              }
-              if (valorCarta == 1) {
+              }else if (valorCarta == 1) {
                 contenedorPesebre.classList.remove("hidden");
                 CartonMaria.classList.toggle("caida");
                 audioMaria.play();
@@ -188,4 +190,9 @@ button1.addEventListener("click", () => {
   let pesebre = document.getElementById("contenedor-pesebre");
   pesebre.classList.toggle("hidden");
   document.body.preventDefault();
+});
+const volverIntentar = document.getElementById('volver-intentar');
+
+volverIntentar.addEventListener('click', () => {
+  location.reload();
 });

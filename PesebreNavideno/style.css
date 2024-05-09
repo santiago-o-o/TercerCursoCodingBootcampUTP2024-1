@@ -1,0 +1,422 @@
+body {
+    font-family: cursive;
+    background-image: url(img/estrellas-bg.png);
+    background-color: rgb(255, 195, 84);
+    ;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-pesebre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    height: 200%;
+    width: 100%;
+}
+
+.fondo-opaco {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.correcto {
+    margin-bottom: 20%;
+    display: flex;
+    border: solid;
+    border-color: orange;
+    border-radius: 1%;
+    border-width: 0.5vw;
+    width: 60%;
+}
+
+.sabias-que {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    background:
+        url("img/estrellas.png") rgb(255, 212, 131);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenes-arriba,
+.imagenes-abajo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenes-arriba img {
+    margin: 3%;
+    width: 15%;
+}
+
+.imagenes-abajo img {
+    width: 7%;
+    margin: 0 3% 3% 3%;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.caratulas-pesebre{
+    position: absolute;
+    z-index: 1000;
+    width: 30%;
+    margin-right: 30%;
+    height: 23%;
+    margin-bottom: 20%;
+    overflow: hidden;
+}
+.caratulas-pesebre img{
+    width: 40px ;
+    position: absolute;
+}
+
+.jesus-png{
+    margin-top: 64%;
+    margin-left: 25%;
+    width: 30%!important;
+}
+.baltazar-png{
+    margin-top: 10%;
+    margin-left: 21%;
+    width: 24%!important;
+}
+.gaspar-png{
+    margin-top: 13%;
+    margin-left: 37%;
+    width: 24%!important;
+}
+.jose-png{
+    margin-top: 19%;
+    margin-left: 2%;
+    width: 24%!important;
+}
+.maria-png{
+    margin-top: 40%;
+    margin-left: -4%;
+    width: 36%!important;
+}
+.melchor-png{
+    margin-top: 35%;
+    margin-left: 45%;
+    width: 36%!important;
+}
+.pastor-png{
+    margin-top: 18%;
+    margin-left: 67%;
+    width: 27%!important;
+}
+.mula-buey-png{
+    margin-top: 33%;
+    margin-left: 70%;
+    width: 35%!important;
+    z-index: 1;
+}
+
+.texto1-sabias-que {
+    color: red;
+    font-weight: bold;
+    font-size: 3dvh;
+}
+.caida{
+    animation-name: caida;
+    animation-duration: 3s;
+}
+@keyframes caida {
+    0%{
+        rotate: 0deg;
+    }
+    10%{
+        rotate: 10deg;
+    }
+    20%{
+        rotate: -10deg;
+    }
+    30%{
+        rotate: 10deg;
+    }
+    40%{
+        rotate: -10deg;
+    }
+    50%{
+        rotate: 10deg;
+    }
+    60%{
+        rotate: -10deg;
+    }
+    75%{
+        rotate: 0deg;
+        transform: translateY(0%);
+    }
+    99%{
+        transform: translateY(120%);
+    }
+    
+}
+#continuar {
+    width: 30%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    position: relative;
+    font-family: cursive;
+    height: 8%;
+    border-color: orange;
+    background-color: rgb(252, 171, 20);
+    border-radius: 15%;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 0px orange;
+}
+
+#continuar:hover {
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0 0 0 orange;
+}
+
+
+.texto {
+    margin: 0;
+    padding: 0;
+}
+
+.pesebre-detras {
+    height: 100%;
+}
+
+.pesebre {
+    width: 50%;
+}
+
+.pesebre img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+    z-index: 1;
+    margin: 0;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        background-color: aquamarine;
+    }
+
+    logo {
+        width: 100%;
+        background-color: white;
+    }
+
+}
+
+.texto1Header {
+    color: rgb(47, 103, 255);
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+.texto2Header {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.contactsleft {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 2%;
+}
+
+.contactsleft img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.contactsleft a:hover {
+    opacity: 0.85;
+}
+
+.header {
+    background-color: aquamarine;
+    margin: 0;
+    width: 56.87em;
+}
+
+.contenido {
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contendor-cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.carta-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    width: 20vw;
+    height: 20vw;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: transparent;
+}
+
+.front img {
+    width: 15vw;
+    height: 15vw;
+    cursor: pointer;
+}
+
+.back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+.back img {
+    width: 15vw;
+    height: 15vw;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.welcome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 200%;
+}
+
+.welcome2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome2 img {
+    width: 30vw;
+
+    position: absolute;
+}
+
+.welcome2 button {
+    position: relative;
+    margin-top: 28%;
+    width: 16%;
+    font-family: cursive;
+    height: 8%;
+    border-color: orange;
+    background-color: rgb(252, 171, 20);
+    border-radius: 15%;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 0px orange;
+}
+
+.welcome2 button:hover {
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0 0 0 orange;
+
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.logos img {
+    cursor: pointer
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo img {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .noDisplay {
+        display: none;
+    }
+
+}
+.hidden{
+    display: none;
+}

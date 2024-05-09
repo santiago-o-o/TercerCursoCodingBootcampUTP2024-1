@@ -75,9 +75,10 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.imagenes-arriba{
+    width: 100%;
+}
 .imagenes-arriba img {
-    margin: 3vw;
     width: 3vw;
 }
 
@@ -151,18 +152,26 @@ body {
 }
 @media screen and (min-width: 1000px) {
 .caratulas-pesebre{
-    height: 55%;
+    margin-top: 10%;
+    height: 55%!important;
+}
+
+header{
+    flex-wrap: nowrap!important;
 }
 .contenedor-final{
     font-size: 1vw;
     margin-top: 200px;
     height: auto;
 }
+
 .sabias-que{
     justify-content: center;
     
 }
-
+.correcto{
+    margin-top: 15%;
+}
 
 
 }

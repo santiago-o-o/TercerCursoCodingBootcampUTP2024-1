@@ -23,12 +23,13 @@ function aleatorio() {
 aleatorio();
 document.addEventListener("DOMContentLoaded", function () {
   const cartas = document.querySelectorAll(".carta");
+  console.log(cartas)
   let volteadas = 0;
   let primeraCarta = null;
   let segundaCarta = null;
   let parejasEncontradas = 0;
   let bloquearClicks = false;
-  const totalCartas = cartas.length / 2;
+  const totalCartas = 8;
   let audioCorrecta = new Audio("Audio/correcta.mp3");
   let audioIncorrecta = new Audio("Audio/incorrecta.mp3");
   let audioGaspar = new Audio("Audio/gaspar.mp3");
@@ -56,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (bloquearClicks) return;
 
       const cartaInner = this.querySelector(".carta-inner");
-      const flipped = false
+      const voltear = false
       const encontrado = false
       let valorCarta = carta.getAttribute("data-valor"); // Obtener el valor de data-valor de la carta
 
-      if (!flipped && !encontrado) {
+      if (!voltear && !encontrado) {
         cartaInner.style.transform = "rotateY(180deg)";
         volteadas++;
 
@@ -143,10 +144,8 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             } else {
               // Las cartas no coinciden, gíralas de vuelta
-              primeraCarta.querySelector(".carta-inner").style.transform =
-                "rotateY(0deg)";
-              segundaCarta.querySelector(".carta-inner").style.transform =
-                "rotateY(0deg)";
+              primeraCarta.querySelector(".carta-inner").style.transform ="rotateY(0deg)";
+              segundaCarta.querySelector(".carta-inner").style.transform ="rotateY(0deg)";
               console.log("no coinciden");
               audioIncorrecta.play();
             }

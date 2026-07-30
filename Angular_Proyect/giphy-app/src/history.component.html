@@ -1,0 +1,13 @@
+<div class="gridContainer">
+  <div class="search">
+    <input type="text" id="infoInput" placeholder="Busca tu gif" />
+    <button id="searchButton" (click)="search()">
+      <img src="../../../assets/search.png" alt="" />
+    </button>
+  </div>
+  <div class="cardContainer">
+    <div class="gif" *ngFor="let gif of gifs">
+      <iframe [src]="gif.embed_url" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
